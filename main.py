@@ -7,16 +7,32 @@ def main():
 
     print("------------- WORD COUNT -------------")
 
-    num_line = 0
+    total_word_counter = 0 
     with open(f"readings/{file_name}", "r") as f:
         for line in f:
-            print(line)
+            total_word_counter += len(line.split())
+        print(total_word_counter)
 
-        
-    
+    print("------------- CHARACTER COUNT -------------")
+
+
+    for char in line:
+        print(char)
         
         
 
 if __name__== '__main__':
     main()
 
+
+
+'''
+
+final steps:
+
+
+2. count each letter and see how much there are staring with most letters in text file to least
+
+
+
+'''
